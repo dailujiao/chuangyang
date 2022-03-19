@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>川扬检测</title>
+	<link rel="shortcut icon" href="images/logo-2.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/jquery.easydropdown.js"></script> -->
+	<!-- <link href="css/nav.css" rel="stylesheet" type="text/css" media="all" /> -->
+	<script src="js/scripts.js" type="text/javascript"></script>
+	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<script type="text/javascript"
+		src="http://api.map.baidu.com/api?v=3.0&ak=UyVINZvnXZDGWWMRaMCjBQ6YRIWpZI71"></script>
+</head>
+
+<body οnlοad="load()">
+	<div id="home" class="header">
+		<div class="header-bottom" style="background-color: #318bf3;padding-top: 2%;padding-bottom: 0px">
+			<div class="container" style="width: 65%;display: flex;">
+				<div style="width: 30%;">
+					<a href="index.html"><img src="images/logo.png" style="width: 70%;" /></a>
+				</div>
+				<ul class="nav mobilePhone" style="width: 70%;">
+					<li class="nav-item menuItemContent" style="width: 100%;">
+						<button type="button" class="btn btn-primary dropdown-toggle button menuItem"
+							data-toggle="dropdown" style="width: 100%;">
+							<span>菜单<span>
+						</button>
+						<div class="dropdown-menu" style="width: 100%;">
+							<a class="dropdown-item dropdownItem" href="index.html">首页</a>
+							<a class="dropdown-item dropdownItem" href="serviceContent.html">服务内容</a>
+							<a class="dropdown-item dropdownItem" href="serviceAdvantages.html">服务优势</a>
+							<a class="dropdown-item dropdownItem" href="waterDetection.html">水质检测</a>
+							<a class="dropdown-item dropdownItem" href="gasDetection.html">空气及废气检测</a>
+							<a class="dropdown-item dropdownItem" href="soilAndSWDetection.html">土壤及固废检测</a>
+							<a class="dropdown-item dropdownItem" href="noiseDetection.html">噪声检测</a>
+							<a class="dropdown-item dropdownItem" href="contactUs.html"
+							style="background-color: darkblue;">联系我们</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="nav PC" style="width: 70%;margin-top: 30px;">
+					<li class="nav-item menuItemContent border-rigth">
+						<a class="nav-link menuItem" href="index.html">首页</a>
+					</li>
+					<li class="nav-item menuItemContent border-rigth">
+						<button type="button" class="btn btn-primary dropdown-toggle button menuItem"
+							data-toggle="dropdown">
+							<span>我们的服务<span>
+						</button>
+						<div class="dropdown-menu" style="width: 100%;">
+							<a class="dropdown-item dropdownItem" href="serviceContent.html">服务内容</a>
+							<a class="dropdown-item dropdownItem" href="serviceAdvantages.html">服务优势</a>
+						</div>
+					</li>
+					<li class="nav-item menuItemContent border-rigth">
+						<button type="button" class="btn btn-primary dropdown-toggle button menuItem"
+							data-toggle="dropdown">
+							<span>检测项目<span>
+						</button>
+						<div class="dropdown-menu" style="width: 100%;">
+							<a class="dropdown-item dropdownItem" href="waterDetection.html">水质检测</a>
+							<a class="dropdown-item dropdownItem" href="gasDetection.html">空气及废气检测</a>
+							<a class="dropdown-item dropdownItem" href="soilAndSWDetection.html">土壤及固废检测</a>
+							<a class="dropdown-item dropdownItem" href="noiseDetection.html">噪声检测</a>
+						</div>
+					</li>
+					<li class="nav-item menuItemContent">
+						<a class="nav-link menuItem" href="contactUs.html" style="background-color: darkblue;">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bg-banner">
+		<div class="banner-bottom-bg">
+			<div class="banner-bg">
+				<div class="container" style="width: 65%">
+					<div class="banner">
+						<div class="banner-grids">
+							<div class="banner-middle" style="background-color: #f8f8f8;">
+								<div style="min-height: calc(100vh);">
+									<div>
+										<h3 class="custom-title">联系方式</h3>
+									</div>
+									<div style="display: table; width: 100%;">
+										<div class="col-md-6 banner-left-grid custom" style="margin: 60px 0 60px 0;">
+											<div style="width: 100%;display: table;font-size: 16px;">
+												<div class="col-md-12 banner-left-grid" style="margin-top: 10px;">
+													<h1 style="font-size: 20px;">川扬检测技术有限公司</h1>
+												</div>
+												<div class="col-md-12 banner-left-grid" style="display: flex">
+													<div style="width: 30px; padding:4px;">
+														<img src="images/icon/phone.png" style="width: 100%;">
+													</div>
+													<div style="line-height: 30px;">公司办公电话: <span
+															style="font-weight: 700;margin-left: 20px;">0411-86305017</span>
+													</div>
+												</div>
+												<div class="col-md-12 banner-left-grid"
+													style="display: flex;margin-top: 10px;">
+													<div style="width: 30px; padding:4px;">
+														<img src="images/icon/phone.png" style="width: 100%;">
+													</div>
+													<div style="line-height: 30px;">销售电话: <span
+															style="font-weight: 700;margin-left: 20px;">0411-86302117</span>
+													</div>
+												</div>
+												<div class="col-md-12 banner-left-grid"
+													style="display: flex;margin-top: 10px;">
+													<div style="width: 30px; padding:4px;">
+														<img src="images/icon/phone.png" style="width: 100%;">
+													</div>
+													<div style="line-height: 30px;">客服电话: <span
+															style="font-weight: 700;margin-left: 20px;">0411-86302117</span>
+													</div>
+												</div>
+												<div class="col-md-12 banner-left-grid"
+													style="display: flex;margin-top: 10px;">
+													<div style="width: 30px;">
+														<img src="images/icon/email.png" style="width: 100%;">
+													</div>
+													<div style="line-height: 30px;">邮箱：<span
+															style="font-weight: 700; margin-left: 20px;">cy@cypte.com</span>
+													</div>
+												</div>
+												<div class="col-md-12 banner-left-grid" style="margin-top: 10px;">
+													<p>地址：大连市甘井子区辛寨子街道新水泥路777号</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 banner-left-grid">
+											<div id="container" style="height: 400px;border: 1px solid #CBCBCB;"></div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="up-arrow">
+										<a class="scroll" href="#home">返回顶部</a>
+									</div>
+									<div style="display: flex;margin-top: 1%;" class="footer-customize">
+										<span style="margin: 0 auto;">客服电话 <span
+												style="font-weight: 700;">0411-86302117</span>
+											<img src="images/icon/integrity.png" alt="" style="width: 40px;"
+												class="image-footer" />
+											<img src="images/icon/specification.png" alt="" style="width: 40px;"
+												class="image-footer" />
+											<img src="images/icon/efficient.png" alt="" style="width: 40px;"
+												class="image-footer" />
+											<img src="images/icon/precise.png" alt="" style="width: 40px;"
+												class="image-footer" />
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+	var map = new BMap.Map("container");
+	// 创建地图实例  
+	var point = new BMap.Point(121.506197, 38.985094);
+	// 创建点坐标  
+	map.centerAndZoom(point, 150);
+	// 初始化地图，设置中心点坐标和地图级别
+
+	var size = new BMap.Size(50, 50);
+
+	var icon = new BMap.Icon('/images/icon/map.png', size);
+	icon.setImageSize(size);
+	icon.setImageUrl('images/icon/map.png');
+	var MarkerOptions = {
+		icon: icon
+	}
+	var marker = new BMap.Marker(point, MarkerOptions);
+	// marker.setIcon(icon);
+	console.log(marker.getShadow());
+	map.addOverlay(marker);
+	map.enableScrollWheelZoom();
+	var licontent = "<b>川扬检测技术有限公司</b><br>";
+	licontent += "<span><strong>地址：</strong>大连市甘井子区辛寨子街道新水泥路777号</span><br>";
+	licontent += "<span><strong>电话：</strong>0411-86305017</span><br>";
+	licontent += "<span class=\"input\"><strong></strong><input class=\"outset\" type=\"text\" name=\"origin\"  placeholder=\"请输入起始地点\"/><input class=\"outset-but\" type=\"button\" value=\"公交\" onclick=\"gotobaidu(1)\" /><input class=\"outset-but\" type=\"button\" value=\"驾车\"  onclick=\"gotobaidu(2)\"/><a class=\"gotob\" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:" + marker.getPosition().lat + "," + marker.getPosition().lng + "|name:川扬检测技术有限公司" + "®ion=大连市甘井子区辛寨子街道新水泥路777号" + "&output=html\" target=\"_blank\"></a></span>";
+	// var infoWindow = new BMap.InfoWindow(licontent);  // 创建信息窗口对象
+	var hiddeninput = "<input type=\"hidden\" value=\"" + '大连' + "\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:" + marker.getPosition().lat + "," + marker.getPosition().lng + "|name:川扬检测技术有限公司" + "\" name=\"destination\" />";
+	var content1 = "<form id=\"gotobaiduform\" action=\"http://api.map.baidu.com/direction\" target=\"_blank\" method=\"get\">" + licontent + hiddeninput + "</form>";
+	var opts1 = { width: 350 };
+	var infoWindow = new BMap.InfoWindow(content1, opts1);
+	map.openInfoWindow(infoWindow, point); //开启信息窗口
+	map.enableScrollWheelZoom();//启动鼠标滚轮缩放地图
+	marker.addEventListener('click', function () {
+		marker.openInfoWindow(infoWindow);
+	});
+	function gotobaidu(type) {
+		if ($.trim($("input[name=origin]").val()) == "") {
+			alert("请输入起点！");
+			return;
+		} else {
+			if (type == 1) {
+				$("input[name=mode]").val("transit");
+				$("#gotobaiduform")[0].submit();
+			} else if (type == 2) {
+				$("input[name=mode]").val("driving");
+				$("#gotobaiduform")[0].submit();
+			}
+		}
+	} 
+</script>
+<style>
+	.dropdownItem {
+		text-align: center;
+		line-height: 30px;
+		font-weight: 600;
+		font-size: 14px;
+	}
+	.custom-title{
+		font-size: 24px;
+	}
+
+	.dropdownItem:hover {
+		background-color: #cbddec;
+	}
+
+	.menuItem {
+		font-size: 18px;
+		color: white;
+		border: none;
+	}
+
+	.mobilePhone {
+		display: none;
+	}
+
+	.menuItemContent {
+		background-color: #0050b3;
+		bottom: 0px;
+		width: 25%;
+		text-align: center;
+		font-size: 16px;
+		color: white;
+		font-weight: 700;
+	}
+
+	.button {
+		width: 100%;
+		height: 100%;
+		background-color: #0050b3;
+	}
+
+	.dropdown-content {
+		background-color: #0050b3;
+		width: 100%;
+	}
+
+	.menuItemContent:hover,
+	.button:hover {
+		background-color: darkblue;
+		cursor: pointer;
+	}
+
+	.border-rigth {
+		border-right: 1px solid #fcf8e3;
+	}
+
+	.image {
+		width: 100%;
+	}
+
+	.instrument {
+		display: flex;
+	}
+
+	.add {
+		position: absolute;
+		z-index: 10;
+
+	}
+
+	.instrument-col {
+		padding: .5em;
+		border: 1px solid #CBCBCB;
+		margin: 2px;
+		width: 150%;
+	}
+
+	@media (max-width:800px) {
+		.footer-phone {
+			width: 100% !important;
+			text-align: center;
+		}
+
+		.footer-icon {
+			width: 25% !important;
+		}
+
+		.menu {
+			padding: 0px !important;
+		}
+	}
+
+	@media (max-width:1300px) {
+		.container {
+			width: 80% !important;
+		}
+	}
+
+	@media (max-width:1000px) {
+		.container {
+			width: 95% !important;
+		}
+	}
+
+	@media(max-width:700px) {
+		.text {
+			display: none;
+		}
+
+		.instrument-col {
+			padding: .1em;
+			border: 1px solid #CBCBCB;
+			margin: 1px;
+		}
+	}
+
+	@media(max-width:480px) {
+		.text {
+			display: none;
+		}
+
+		.instrument-col {
+			padding: .1em;
+			border: 1px solid #CBCBCB;
+			margin: 1px;
+		}
+
+		.banner-middle {
+			padding: 2px;
+		}
+
+		.banner-left-grid {
+			padding: 2px !important;
+		}
+
+		.col-md-12,
+		.col-md-5,
+		.col-md-7 {
+			padding: 2px !important;
+		}
+
+		.font-style {
+			font-size: 10px !important;
+		}
+
+		.custom-title {
+			padding: 0px !important;
+			font-size: 16px !important;
+		}
+
+		.instrument-configuration {
+			padding: 2px !important;
+
+		}
+
+		.image-footer {
+			width: 25px !important;
+		}
+
+		.PC {
+			display: none;
+		}
+
+		.mobilePhone {
+			display: inline;
+		}
+
+		.custom {
+			margin: 0px !important;
+		}
+
+	}
+</style>
+
+</html>
